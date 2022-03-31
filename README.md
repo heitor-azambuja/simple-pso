@@ -2,7 +2,7 @@
 
 The code in this repository implements a simple particle swarm optimization (PSO) algorithm using python. It generates a surface plot of a 3d function and a 2d heatmap of it. Then it animates the particles movement on the heatmap.
 
-PSO algorithm goal is to globaly optimize a function with 1 to n dimensions, finding its minimal or maximal.
+PSO algorithm goal is to globaly optimize a function with 1 to n dimensions, finding its minimal or maximal value.
 PSO strategy is inspired by birds flight and fish shoal movevment.
 
 Read the tutorial aboud the implementation on [thrivingant.com](https://www.thrivingant.com) (work in progess)
