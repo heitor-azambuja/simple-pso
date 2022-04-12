@@ -19,12 +19,10 @@ vel = []
 pBest = []
 
 
-#  Parabole
 def fun(x, y):
-    return x**2 + y**2
-    # return - x**2 - y**2
+    return x**2 + y**2  # Parabole
+    # return - x**2 - y**2  # Inverse parabole
     # return -x**2 + y**2
-
 
 
 #  Figure Creation and initial plots
