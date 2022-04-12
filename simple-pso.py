@@ -22,6 +22,9 @@ pBest = []
 #  Parabole
 def fun(x, y):
     return x**2 + y**2
+    # return - x**2 - y**2
+    # return -x**2 + y**2
+
 
 
 #  Figure Creation and initial plots
@@ -88,7 +91,7 @@ def animate(i):
     
     for i in range(len(x[0])):
         # compute new velocity
-        vel[i] = (inertia * vel[i]) + (personalWeight * np.random.rand(2) * (pBest[i] - np.array([x[0][i], y[0][i]]))) + (socialWeight * np.random.rand(2) * ([minx, miny] - np.array([x[0][i], y[0][i]])))
+        vel[i] = (inertia * vel[i]) + (personalWeight * np.random.rand() * (pBest[i] - np.array([x[0][i], y[0][i]]))) + (socialWeight * np.random.rand() * ([minx, miny] - np.array([x[0][i], y[0][i]])))
         # max velocity limit
         vel[i][0] = min(vel[i][0], MAX_VEL)
         vel[i][1] = min(vel[i][1], MAX_VEL)
